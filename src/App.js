@@ -1,12 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import Posts from './components/Posts/Posts';
+import { Outlet } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+
 
 function App() {
   return (
-    <main className='container'>
-      <Posts />
-    </main>
+    <div className="container-fluid">
+      <Navbar />
+      <div className='container'>
+        <Outlet />
+      </div>
+    </div>
   );
 }
 
