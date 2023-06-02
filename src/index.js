@@ -11,6 +11,7 @@ import 'font-awesome/css/font-awesome.min.css'
 import Home from './components/Home/Home';
 import Posts from './components/Posts/Posts';
 import NotFound from './components/NotFound/NotFound';
+import LoginForm from './components/LoginForm/LoginForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
         <Route path="/" element={<App />}>
           <Route path="home" element={<Home />} />
           <Route path="posts" element={<Posts />} />
+          <Route path="login" element={<LoginForm />}/>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
